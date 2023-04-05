@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 150px 1fr 150px;
+    margin-right: 400px;
+    margin-left: 400px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image:url(backardians-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    display: grid;
+}
+
+h1{
+    display: grid;
+    place-items: center;
+    place-content: center;
+    color: rgb(231, 235, 31);
+}
+
+p+p{
+    display: inline-block;
+    color: black;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 4fr 2fr;
+    row-gap: 15px;
+}
+
+.partesuperior{
+    display: grid;
+    grid-template-areas: 
+    "principal secundaria"
+    "principal secundaria";
+    gap: 15px;
+    grid-template-columns: 7fr 6fr;
+}
+
+.parteinferior{
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: 2fr 2fr 3fr;
+}
+
+.parte__inferior{
+    border-radius: 10px;
+}
+
+.imgprincipal{
+    grid-area: principal;
+    background-image: url(backyardigans-divulgacao.jpg);
+     background-size: 310px;
+}   
+.texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.imgprincipal:hover{
+    display: block;
+    transform: scale(1.1);
+
+}
+.imglateral{
+    grid-area: secundaria;
+    display: grid;
+    grid-template-areas: 
+    "img1 img2"
+    "img3 img4";
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.img__lateral *{
+    border-radius: 10px;
+}
+.imglateral *:hover{
+    transform: scale(1.1);
+}
+
+.img1{
+    background-image: url(Agente_de_Envio_Pablo_infobox.webp);
+    background-size: 16.8vmin;
+    
+}
+.img2{
+    background-image: url(Agente_de_Entrega_Tyrone.webp);
+    background-size: 16.5vmin;
+}
+
+.img3{
+    background-image: url(tasha\ ves.jpg);
+    background-size: 16.5vmin;
+}
+
+.img4{
+    background-image: url(autin\ terno.jpg);
+    background-size: 16.5vmin;
+}
+
+.img5{
+    background-image: url(unica\ repo.jpg);
+    background-size: 110px;
+}
+.img5:hover{
+    transform: scale(1.1);
+}
+.img6{
+    background-image: url(Agente_Secreto_rol_infobox.webp);
+    background-size: 120px;
+}
+.img6:hover{
+    transform: scale(1.1);
+}
+.img7{
+    background-image: url(d928dcff49abe98cb81b8278783e2a31.jpg);
+    background-size: cover;
+}
+.img7:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao{
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+}
+
+.botao p{
+    color: white;
+    font-size: medium;
+}
